@@ -4,7 +4,7 @@ EXPOSE 8080
 COPY package.json .
 COPY *.js .
 RUN npm install
-ENV REDIS_HOST="true" \
+ENV REDIS_HOST="redis" \
     REDIS_PORT="6379" \
     CATALOGUE_HOST="catalogue" \
     CATALOGUE_PORT="8080"
