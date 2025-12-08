@@ -1,4 +1,3 @@
-
 package com.instana.robotshop.shipping;
 
 import javax.persistence.Table;
