@@ -1,0 +1,10 @@
+services:
+  mongodb: # --name mangodb
+    image: mongodb:v1
+    
+networks:
+  default: 
+    driver: bridge
+    name: roboshop
+    external: false #true u have created network manually using docker network command
+
