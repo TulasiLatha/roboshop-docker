@@ -15,10 +15,10 @@ services:
     container_name: mysql
   rabbitmq:
     image: rabbitmq:3
-    container_name: rabbitmq  
+    container_name: rabbitmq 
     environment:
       RABBITMQ_DEFAULT_USER: roboshop
-      RABIITMQ_DEFAULT_PASS: roboshop123
+      RABBITMQ_DEFAULT_PASS: roboshop123
   user:
     image: user:v1
     container_name: user
