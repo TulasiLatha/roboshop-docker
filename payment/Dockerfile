@@ -7,7 +7,7 @@ RUN pip3 install --prefix=/install -r requirements.txt
 FROM python:3.9.25-alpine3.21
 EXPOSE 8080
 WORKDIR /opt/server
-RUN addgroup -s roboshop && adduser -S roboshop -G roboshop
+RUN addgroup -S roboshop && adduser -S roboshop -G roboshop
 ENV CART_HOST="cart" \
     CART_PORT="8080" \
     USER_HOST="user" \
